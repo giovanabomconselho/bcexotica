@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="z.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC Exótica - Cadastro</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <div id="topo">
+        <div id="divlogo">
+            <img src="logo.png">
+        </div>
+        <div id="paginas">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="index.html">Quem Somos</a></li>
+                  <li><a class="menu__item" href="index10.html">Cursos</a></li>
+                  <li><a class="menu__item" href="index4.html">Consultas</a></li>
+                  <li><a class="menu__item" href="index5.html">Hotelzinho</a></li>
+                  <li><a class="menu__item" href="index11.html">Consultoria</a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+
+<form action="https://formsubmit.co/bcexoticacursos@gmail.com" method="POST" >
+    <div class="center-login">
+        <div class="card-login" id="geral">
+            <h1>CADASTRO</h1>
+
+            <div id="container">
+                     <div id="grid1">
+            <div class="textfild">
+                <label for="usuario">NOME COMPLETO</label> 
+                <input type="text" name="name" id="usu" required>
+            </div>
+            <div class="textfild">
+                <label for="senha">EMAIL</label>
+                <input type="text" name="email" id="usu" required>
+            </div>
+            <div class="textfild">
+                <label for="senha">CPF</label>
+                <input type="cpf" id="cpf" name="cpf" oninput=mascara_cpf() required>
+            </div>
+                        </div>
+                        <div id="grid2">
+                            <div class="textfild">
+                                <label for="usuario">ENDEREÇO</label> 
+                                <input type="text" name="endereço" id="usu" required>
+                            </div>
+                            <div>
+                            <div class="textfild">
+                                <select name="time" class="editopt" >
+                                     
+                                    <option value="est">ESTUDANTE DE VETERINÁRIA</option>
+                                    <option value="for">VETERINÁRIO FORMADO</option>
+                                    </select>
+                                    </div>
+                            </div>
+                            <div class="textfild">
+                                <select name="time" class="editopt" >
+                                    <option value="crmv">CRMV</option>
+                                    <option value="dec">DECLARAÇÃO DE ESTUDANTE</option>
+                                </select>
+                            </div>
+                            <input id="envarq" type="file" required/>
+                        </div>
+        </div>
+        
+        <button onclick="myFunction()" class="btn-login">ENVIAR</button>
+        
+
+
+    </div>
+    </div>
+        <input type="hidden" name="_subject" value="Novo Contato!">
+        <input type="text" name="_honey" style="display: none;">
+        <input type="hidden" name="_captcha" value="false">
+</form>
+
+    
+
+<div id="rodape">
+    <div id="rodtopo">
+       <a class="ajusta" href="https://www.instagram.com/alexiabcexotica/"><label id="insta">@alexiabcexotica</label></a>
+       <div class="editrodape1"></div>
+       <a class="ajusta" href="https://contate.me/bcexotica"><label id="tel">+55 (31) 9196-5959</label></a>
+       <div class="editrodape1"></div>
+       <img src="logo.png">
+       <div class="editrodape2"></div>
+       <label class="ajusta" id="email">bcexoticacursos@gmail.com</label>
+       <div class="editrodape3"></div>
+       <label class="ajusta" id="email">Belo Horizonte/MG</label>
+    </div>
+
+    <div id="divisao"></div>
+
+    <div id="instaedit">
+       <label>Designed by <a class="arroba" href="https://www.instagram.com/gabrielmarcondees/">Gabriel Marcondes</a> and <a class="arroba" href="https://www.instagram.com/giovanabomconselho/">Giovana Bom Conselho</a></label>
+    </div>
+ </div>
+
+
+
+
+</body>
+<script>
+    function mascara_cpf ()
+        {
+           //limitador
+
+        var cpf = document.getElementById("cpf").value
+
+            console.log (cpf)
+
+            cpf = cpf.slice (0,14) //(pode limitar a quantidade de char na entrada pelo java script)
+
+            console.log(cpf)
+
+            document.getElementById("cpf").value = cpf
+
+            cpf = document.getElementById("cpf").value.slice(0,14)
+
+            console.log(cpf)
+           
+            //máscara
+            var cpf_formatado = document.getElementById("cpf").value
+
+            if (cpf_formatado[3] != ".")
+            {
+                if(cpf_formatado[3] != undefined)
+                {
+                    document.getElementById("cpf").value = "." + cpf_formatado[3];
+                }
+            }
+
+            if (cpf_formatado[3] != ".")
+            {
+                if(cpf_formatado[3] != undefined)
+                {
+                    document.getElementById("cpf").value = cpf_formatado.slice(0,3) + "." + cpf_formatado[3]
+                }
+            }
+
+            if (cpf_formatado[7] != ".")
+                
+                if(cpf_formatado[7] != undefined)
+                {
+                    document.getElementById("cpf").value = cpf_formatado.slice(0,7) + "." + cpf_formatado[7]
+                }
+
+            if (cpf_formatado[11] != "-")
+            {
+                if(cpf_formatado[11] != undefined)
+                {
+                    document.getElementById("cpf").value = cpf_formatado.slice(0,11) + "-" + cpf_formatado[11]
+                }
+            }
+        }
+
+
+
+</script>
+</html>

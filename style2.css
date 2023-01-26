@@ -1,0 +1,484 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+#topo{
+    background-color: #266319;
+    padding: 0.6vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#divlogo img{
+    width: 12vw;
+    padding-left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#paginas{
+    font-size: 1.29vw;
+    padding-right: 2vw;
+    z-index: 1;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+    background-color: #266319;
+}
+#menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #266319;
+}
+#menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+}
+.menu__btn {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 1.35vw;
+    height: 1.35vw;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.1vw;
+    background-color: #fff;
+    transition-duration: .25s;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -0.41vw;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 0.41vw;
+}
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 15.625vw;
+    height: 100%;
+    margin: 0;
+    margin-left: 85%;
+    padding: 4.1vw 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 0.1vw 0.1vw 0.3vw rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+}
+.menu__item {
+    display: block;
+    padding: 0.625vw 1.25vw;
+    color: #266319;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.041vw;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#depoimentos{
+    font-size: 30px;
+
+}
+
+
+
+
+
+
+
+#cima{
+    background-color: #a2b99d;
+    padding-bottom: 2vw;
+        display: flex;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0.9;
+    width: 100%;
+    height: 35vw;
+    padding: 300px;
+
+}
+
+
+
+
+#meio{
+    background-color: #a2b99d;
+    padding-bottom: 2vw;
+}
+
+
+
+
+
+#imgspg2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(fundo.png);
+    opacity: 0.9;
+    width: 100%;
+    height: 33vw;
+}
+
+.imageminicial{
+    display: flex;
+    flex-direction: column;
+}
+
+.imageminicial img{
+    width: 20vw;
+    height: 21vw;
+}
+
+
+#saibamais{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+.btn-login{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.83vw 0px;
+    margin-top: 1.3vw;
+    border: none;
+    border-radius: 0.41vw;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.05vw;
+    cursor: pointer; 
+    background-color: #1f501480;
+    font-size: medium;
+}
+
+
+.esg{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.83vw 0px;
+    margin-top: 1.3vw;
+    border: none;
+    border-radius: 0.41vw;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.05vw;
+    cursor: pointer; 
+    background-color: #9b2525a4;
+    font-size: medium;
+}
+
+#disp{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#disponiveis{
+    font-size: 1.5625vw;
+}
+
+
+#indisp{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -1.5625vw;
+}
+
+#indisponiveis{
+    font-size: 1.5625vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#depoimentos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3vw;
+}
+
+#disponiveis{
+    font-size: 1.5625vw;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    width: 35vw;
+    height: 17vw;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -1.145vw;
+    padding:  0.83vw;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9375vw;
+    transition: 0.6s ease;
+    border-radius: 0 0.15625vw 0.15625vw 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 0.15625vw 0 0 0.15625vw;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size:  0.625vw;
+    padding: 0.41vw  0.625vw;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 0.78125vw;
+    width: 0.78125vw;
+    margin: 0 0.1041vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#voltar{
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15vw;
+    font-weight: 500;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#rodape{
+    background-color: #266319;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5vw;
+}
+
+#rodtopo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.25vw;
+}
+
+#divisao{
+    background-color: #a2b99d;
+    width: 20vw;
+    height: 0.04vw;
+    margin-bottom: 0.25vw;
+}
+
+#instaedit{
+    font-size:  0.5vw;
+    background-color: #266319;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arroba{
+    color: #fff;
+}
+
+#rodape a{
+    text-decoration: none;
+}
+
+#rodape img{
+
+    width: 8vw;
+}
+
+#insta{
+    cursor: pointer;
+}
+
+#tel{
+    cursor: pointer;
+}
+
+#email{
+    cursor: pointer;
+}
+
+.editrodape1{
+    width: 4.7vw;
+}
+
+.editrodape2{
+    width: 3vw;
+}
+
+.editrodape3{
+    width: 3vw;
+}

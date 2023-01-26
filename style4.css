@@ -1,0 +1,304 @@
+body {
+    background-image: url(4.jpg);
+    opacity: 0.8;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+#topo{
+    background-color: #266319;
+    padding: 0.6vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#divlogo img{
+    width: 12vw;
+    padding-left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#paginas{
+    font-size: 1.29vw;
+    padding-right: 2vw;
+}
+
+
+
+#menu__toggle {
+    opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+    background-color: #266319;
+}
+#menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #266319;
+}
+#menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+}
+.menu__btn {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 1.35vw;
+    height: 1.35vw;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.1vw;
+    background-color: #fff;
+    transition-duration: .25s;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -0.41vw;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 0.41vw;
+}
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 15.625vw;
+    height: 100%;
+    margin: 0;
+    margin-left: 85%;
+    padding: 4.1vw 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 0.1vw 0.1vw 0.3vw rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+}
+.menu__item {
+    display: block;
+    padding: 0.625vw 1.25vw;
+    color: #266319;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.041vw;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.center-login {
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    left: 20%;
+}
+
+.center-login h1{
+    color: rgb(0, 0, 0);
+    padding-bottom: 0.78vw;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.6vw 1.8vw;
+    border-radius: 1.041vw;
+    box-shadow: 0vw 0.52vw 2.08vw #000000c4;
+    background-color:rgb(234, 248, 244);
+    height: 9.375vw;
+    opacity: 0.8;
+}
+
+.card-login h1 {
+    font-weight: 800;
+    margin: 0;
+    color: black;
+}
+
+.textfild a{
+    color: #000;
+}
+
+#cel{
+    cursor: pointer;
+}
+
+.textfild{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#wpp{
+    padding-bottom: 0.78vw;
+}
+
+
+
+
+
+#voltar{
+    margin-top: -1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15vw;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+#rodape{
+    background-color: #266319;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5vw;
+}
+
+#rodtopo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.25vw;
+}
+
+#divisao{
+    background-color: #a2b99d;
+    width: 20vw;
+    height: 0.04vw;
+    margin-bottom: 0.25vw;
+}
+
+#instaedit{
+    font-size:  0.5vw;
+    background-color: #266319;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.arroba{
+    color: #fff;
+}
+
+#rodape a{
+    text-decoration: none;
+}
+
+#rodape img{
+
+    width: 8vw;
+}
+
+#insta{
+    cursor: pointer;
+}
+
+#tel{
+    cursor: pointer;
+}
+
+#email{
+    cursor: pointer;
+}
+
+.editrodape1{
+    width: 4.7vw;
+}
+
+.editrodape2{
+    width: 3vw;
+}
+
+.editrodape3{
+    width: 3vw;
+}
+
+.ajusta{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

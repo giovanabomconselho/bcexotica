@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="z.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC Exótica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="topo">
+        <div id="divlogo">
+            <img src="logo.png">
+        </div>
+        <div id="paginas">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="index.html">Quem Somos</a></li>
+                  <li><a class="menu__item" href="index10.html">Cursos</a></li>
+                  <li><a class="menu__item" href="index4.html">Consultas</a></li>
+                  <li><a class="menu__item" href="index5.html">Hotelzinho</a></li>
+                  <li><a class="menu__item" href="index11.html">Consultoria</a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+
+    
+
+    <div id="meio">
+
+        <div class="text">
+            <div id="qs">
+                <label id="qs">Quem Somos</label>
+            </div>
+            <div id="lorem">
+              <p class="loreem">⠀⠀⠀⠀⠀Aléxia Bom Conselho teve contato com a área de animais silvestres e exóticos no início da graduação estagiando com a Dra. Marcela Ortiz com quem trabalha atualmente, estagiou em clínicas exclusivas de pets não convencionais em Belo Horizonte e São Paulo, no criatório Jiboias Brasil, no Projeto de conservação do maior primata das américas o Muriqui-do-Norte, onde trabalhou como veterinária substituta logo após a graduação e foi interna no Parque Zoológico de Huachipa em Lima, Peru. A BC Exótica é uma empresa idealizada pela médica veterinária Alexia Bom Conselho - CRMV MG 27105. Foi fundada durante a pandemia em 2021 com objetivo de ajudar estudantes e profissionais continuarem se atualizando na área de medicina de animais silvestres/exóticos, através de cursos on-line com professores e mestres com mais de 10 anos de experiência, tendo esgotado as vagas em todas as turmas abertas. Atualmente além dos cursos, oferecemos os serviços de atendimento médico veterinário especializado em animais silvestres e exóticos em clínicas na região de Belo Horizonte, à domicílio e atendimento/ consultoria a criadouros de aves, répteis e mamíferos exóticos e silvestres em BH e região.</p>
+            </div>
+              
+        </div>
+
+        <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="a.jfif" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="b.jfif" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="c.jfif" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="d.jfif" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="e.jfif" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="f.jfif" style="width:100%">
+          </div>
+      </div>
+  
+
+      </div>
+
+
+    <div id="rodape">
+       <div id="rodtopo">
+          <a href="https://www.instagram.com/alexiabcexotica/"><label id="insta">@alexiabcexotica</label></a>
+          <div class="editrodape1"></div>
+          <a href="https://contate.me/bcexotica"><label id="tel">+55 (31) 9196-5959</label></a>
+          <div class="editrodape1"></div>
+          <img src="logo.png">
+          <div class="editrodape2"></div>
+          <label id="email">bcexoticacursos@gmail.com</label>
+          <div class="editrodape3"></div>
+          <label id="email">Belo Horizonte/MG</label>
+       </div>
+
+       <div id="divisao"></div>
+
+       <div id="instaedit">
+          <label>Designed by <a class="arroba" href="https://www.instagram.com/gabrielmarcondees/">Gabriel Marcondes</a> and <a class="arroba" href="https://www.instagram.com/giovanabomconselho/">Giovana Bom Conselho</a></label>
+       </div>
+    </div>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</body>
+
+
+
+<script>
+
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2500); // Change image every 2 seconds
+}
+
+
+</script>
+
+
+
+</html>
